@@ -4,9 +4,7 @@ int main() {
     char nivel;
     float salario_atual, aumento;
 
-    printf("Digite o nivel de experiencia (a, b ou c): ");
     scanf(" %c", &nivel);
-    printf("Digite o salario atual: ");
     scanf("%f", &salario_atual);
 
     aumento = (nivel == 'a') ? 0.05 : (nivel == 'b') ? 0.07 : (nivel == 'c') ? 0.08 : 0.0;
@@ -15,7 +13,7 @@ int main() {
         printf("Nivel de experiencia invalido.\n");
     } else {
         float novo_salario = salario_atual * (1 + aumento);
-        printf("Novo salario: R$ %.2f\n", novo_salario);
+        printf("R$ %.2f\n", novo_salario);
     }
 
     return 0;
