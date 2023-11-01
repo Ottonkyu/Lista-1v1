@@ -18,28 +18,28 @@ void mostrematriz(int matriz[4][4]) {
     }
 }
 
-void somamatriz(int A[4][4], int B[4][4], int result[4][4]) {
+void somamatriz(int A[4][4], int B[4][4], int resultado[4][4]) {
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
-            result[i][j] = A[i][j] + B[i][j];
+            resultado[i][j] = A[i][j] + B[i][j];
         }
     }
 }
 
-void submatriz(int A[4][4], int B[4][4], int result[4][4]) {
+void submatriz(int A[4][4], int B[4][4], int resultado[4][4]) {
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
-            result[i][j] = A[i][j] - B[i][j];
+            resultado[i][j] = A[i][j] - B[i][j];
         }
     }
 }
 
-void multmatriz(int A[4][4], int B[4][4], int result[4][4]) {
+void multmatriz(int A[4][4], int B[4][4], int resultado[4][4]) {
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
-            result[i][j] = 0;
+            resultado[i][j] = 0;
             for (int k = 0; k < 4; k++) {
-                result[i][j] += A[i][k] * B[k][j];
+                resultado[i][j] += A[i][k] * B[k][j];
             }
         }
     }
