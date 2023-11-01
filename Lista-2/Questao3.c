@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 void leiamatriz(int matriz[4][4]) {
     for (int i = 0; i < 4; i++) {
