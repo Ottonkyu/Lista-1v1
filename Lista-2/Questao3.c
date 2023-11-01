@@ -9,10 +9,10 @@ void leiamatriz(int matriz[4][4]) {
     }
 }
 
-void mostrematriz(int matrix[4][4]) {
+void mostrematriz(int matriz[4][4]) {
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
-            printf("%4d", matrix[i][j]);
+            printf("%4d", matriz[i][j]);
         }
         printf("\n");
     }
